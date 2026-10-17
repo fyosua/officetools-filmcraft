@@ -1,26 +1,26 @@
 //! Community and project links (Help menu, About dialog, header Discord button, Home screen).
 //!
-//! FilmCraft is part of the ArtCraft family: the community lives on the ArtCraft Discord, every
-//! app has a page on the ArtCraft website and a public GitHub repository.
+//! FilmCraft is part of the ArtCraft family: the community lives on the OfficeTools Discord, every
+//! app has a page on the OfficeTools website and a public GitHub repository.
 
 /// The app's short name, used in the website and repository URLs.
 pub const APP: &str = "filmcraft";
 
 /// The ArtCraft community Discord.
-pub const DISCORD: &str = "https://discord.gg/artcraft";
-/// The ArtCraft website.
-pub const WEBSITE: &str = "https://getartcraft.com";
-/// FilmCraft's page on the ArtCraft website.
-pub const APP_PAGE: &str = "https://getartcraft.com/apps/filmcraft";
+pub const DISCORD: &str = "https://discord.gg/officetools";
+/// The OfficeTools website.
+pub const WEBSITE: &str = "https://officetools.yosuaf.com";
+/// FilmCraft's page on the OfficeTools website.
+pub const APP_PAGE: &str = "https://officetools.yosuaf.com/apps/filmcraft";
 /// FilmCraft's source repository.
-pub const GITHUB: &str = "https://github.com/storytold/filmcraft";
+pub const GITHUB: &str = "https://github.com/fyosua/officetools-filmcraft";
 /// New issue on FilmCraft's repository.
-pub const ISSUES: &str = "https://github.com/storytold/filmcraft/issues";
+pub const ISSUES: &str = "https://github.com/fyosua/officetools-filmcraft/issues";
 
 /// (command id, label, url) for every link, in menu order.
 pub const ALL: [(&str, &str, &str); 5] = [
-    ("help.discord", "Join the ArtCraft Discord…", DISCORD),
-    ("help.website", "ArtCraft Website", WEBSITE),
+    ("help.discord", "Join the OfficeTools Discord…", DISCORD),
+    ("help.website", "OfficeTools Website", WEBSITE),
     ("help.appPage", "FilmCraft on getartcraft.com", APP_PAGE),
     ("help.github", "FilmCraft on GitHub", GITHUB),
     ("help.reportIssue", "Report an Issue…", ISSUES),

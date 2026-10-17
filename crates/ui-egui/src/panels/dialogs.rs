@@ -409,7 +409,7 @@ fn delete_tracks(app: &mut FilmcraftApp, ctx: &egui::Context) -> bool {
     keep
 }
 
-/// Help ▸ About FilmCraft, in three tabs: About (version and the ArtCraft community links),
+/// Help ▸ About FilmCraft, in three tabs: About (version and the OfficeTools community links),
 /// Contributors and Models (the credits compiled in from `contributors/contributors.json`, see
 /// `crate::credits` and docs/contributors.md).
 ///
@@ -444,7 +444,7 @@ fn about(app: &mut FilmcraftApp, ui: &mut egui::Ui) {
     }
 }
 
-/// About ▸ About: version, licence and the ArtCraft community links. Joining the Discord is the
+/// About ▸ About: version, licence and the OfficeTools community links. Joining the Discord is the
 /// first, accented button.
 ///
 /// Automation ids: `about.discord`, `about.website`, `about.appPage`, `about.github`,
@@ -454,7 +454,7 @@ fn about_tab(app: &mut FilmcraftApp, ui: &mut egui::Ui) {
     use crate::links;
     let t = app.tokens;
     ui.set_width(380.0);
-    // ArtCraft wordmark (first-party trademark, docs/brand/).
+    // OfficeTools wordmark (clean-room brand asset).
     let (r, _) = ui.allocate_exact_size(egui::vec2(ui.available_width(), 30.0), egui::Sense::hover());
     crate::brand::paint_wordmark(ui, egui::pos2(r.min.x, r.center().y), 20.0, app.ui.dark);
     ui.add_space(6.0);
@@ -489,7 +489,7 @@ fn about_tab(app: &mut FilmcraftApp, ui: &mut egui::Ui) {
             links::open(app, ui.ctx(), url);
         }
     };
-    link(ui, "discord", Icon::Chat, tl!("Join the ArtCraft Discord"), links::DISCORD, true);
+    link(ui, "discord", Icon::Chat, tl!("Join the OfficeTools Discord"), links::DISCORD, true);
     ui.add_space(6.0);
     link(ui, "website", Icon::Globe, "getartcraft.com", links::WEBSITE, false);
     link(ui, "appPage", Icon::Globe, tl!("FilmCraft on getartcraft.com"), links::APP_PAGE, false);
